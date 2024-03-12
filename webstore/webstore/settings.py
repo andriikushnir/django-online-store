@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'nested_admin',
     'mptt',
+    'rest_framework',
     'telegram_bot',
     'website',
     'accounts'

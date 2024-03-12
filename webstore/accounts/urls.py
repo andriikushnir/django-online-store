@@ -1,10 +1,10 @@
 from django.contrib import admin
 from django.urls import path
 from django.urls import path, include
+from .views import UserProfileView
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    #path('', include('accounts.urls')),
-    path('_nested_admin/', include('nested_admin.urls')),
+    path('api/v1/account', UserProfileView.as_view(), name='my-account'),
 ]
